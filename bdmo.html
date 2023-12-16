@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BDMO Solution</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script src="js/tailwind.js"></script>
+<style>
+    @font-face {
+        font-family: 'Tiro Bangla';
+        src: url('/fonts/TiroBangla-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    body {
+        font-family: 'Tiro Bangla', sans-serif;
+    }
+    
+  </style>
+</head>
+<bod class="">
+    <div class="bg-emerald-50 text-2xl">
+        <div class="text-center py-2"> 
+            <div> জাতীয় গণিত উৎসব - ২০২৩</div>
+            <div>সমস্যা সমাধান</div>
+           
+            
+         </div>
+        
+    </div>
+    <div class="mx-4 mt-2">
+        <div class="text-sky-500">
+            ক্যাটাগরি: সেকেন্ডারি (৯ম-১০ম শ্রেণি)
+        </div>
+        <div class="my-2">
+            সমস্যা ০১:<br>
+            নিচের সমীকরণটি সকল সম্ভাব্য অঋণাত্মক পূর্ণসংখ্যিক সমাধান \((x,y)\)  নির্ণয় কর যেন:
+            $$ x! + 2^y = (x+1)! $$ 
+        </div>
+
+        <div class="bg-emerald-50 shadow rounded-lg">
+            <div class="px-4 py-2 my-1">
+                <div>সমাধান ০১:</div>
+            <div>
+                দেওয়া আছে,
+                \begin{align*}
+                    2^y &= (x+1)! - x! \\
+                   \implies 2^y &= (x+1) \times x! - x! \\
+                   \implies 2^y &= x! \times \{ (x+1) - 1 \} \\
+                   \implies 2^y &= x! \times x \tag{1} \\
+                \end{align*}
+                আমরা জানি,
+                $$ n! = 1 \times 2 \times 3 \times \dots \times n$$
+                সমীকরণ \(1\) থেকে স্পষ্টত \(x\) এর মান \(2\) থেকে বেশী হতে পারবে না। কারণ \(1\) এর বামপক্ষে রয়েছে \(2\) এর ঘাত আর \(x\) এর মান \(3\) হয়ে গেলেই ডানপক্ষে একটি মোলিক সংখ্যা চলে আসবে যাকে আর \(2\) এর ঘাত আকারে বিশ্লেষণ করা যায় না।
+                তাই আমরা  \(x = 0, 1, 2\)  দিয়ে সমীকরণ \(1\) পরীক্ষা করলে দেখা যাবে শুধুমাত্র \(x = 1, 2\) এর জন্য ডানপক্ষকে \(2\)  এর ঘাত আকারে প্রকাশ করা যাচ্ছে।
+
+                <br>
+                সুতরাং, সমাধান সেট, \(S = \{(1, 0), (2, 2)\} \)
+
+
+            </div>
+
+            </div>
+            
+        </div>
+        
+
+    </div>
+
+    <div>
+
+    </div>
+    
+
+</body>
+</html>
