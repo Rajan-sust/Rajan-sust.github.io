@@ -29,7 +29,7 @@
         
     </div>
     <div class="mx-4 mt-2">
-        <div class="text-sky-500">
+        <div class="text-sky-500 text-center">
             ক্যাটাগরি: সেকেন্ডারি (৯ম-১০ম শ্রেণি)
         </div>
         <div class="my-2">
@@ -57,12 +57,50 @@
 
                 <br>
                 সুতরাং, সমাধান সেট, \(S = \{(1, 0), (2, 2)\} \)
+            </div>
+            </div>
+        </div>
+        <div class="text-sky-500 text-center">
+            ক্যাটাগরি: হায়ার সেকেন্ডারি (১১শ - ১২শ শ্রেণি)
+        </div>
+        <div class="my-2">
+            সমস্যা ০৩:<br>
+            যেকোন ধনাত্মক পূর্ণসংখ্যা \(n\) এর জন্য \(f(n)\) হলো ক্ষুদ্রতম ধনাত্মক পূর্ণসংখ্যা, যেটি দ্বারা n বিভাজ্য নয়। যেমন: \(f(1) = 2, f(6) = 4\)। প্রমাণ করো যে, যেকোন ধনাত্মক পূর্ণসংখ্যা, \(n\) এর জন্য, হয় \(f(f(n))\) অথবা \(f(f(f(n)))\) অব্যশই \(2\) এর সমান হবে।
+        </div>
 
+        <div class="bg-emerald-50 shadow rounded-lg">
+            <div class="px-4 py-2 my-1">
+                <div>সমাধান ০৩:</div>
+            <div>
+                $$
+                n = \begin{cases} 
+                    2k - 1 &  \\
+                    2k &
+                \end{cases}
+                ; k \in \mathbb{N}
+                $$
+                যদি \(n = 2k - 1\) হয়,
+                \begin{align*}
+                     f(f(f(2k - 1))) &= f(f(2)) \\
+                     &= f(3) \\
+                     &= 2
+                \end{align*}
+                যদি \(n = 2k \) হয় তাহলে Fundamental Theorem of Arithmetic [1] অনুযায়ী,
+                $$
+                     2k = {P_1}^{n_1} \times {P_2}^{n_2} \times \dots \times {P_m}^{n_m}
+                $$
+                যেখানে  \(P_1, P_2, P_3, \dots \) ক্রমান্বয়ে মৌলিক সংখ্যা \(2, 3, 5, \dots\) কে নির্দেশ করে এবং \(n_i\) অঋণাত্মক পূর্ণসংখ্যা কিন্তু \(n_m\) ধনাত্মক পূর্ণসংখ্যা।
+                \begin{align*}
+                     f(f(2k)) &= f(f({P_1}^{n_1} \times {P_2}^{n_2} \times \dots \times {P_m}^{n_m})) \\
+                     &= f(min({P_1}^{n_1 + 1}, {P_2}^{n_2 + 1}, \dots, {P_m}^{n_m + 1}, {P_{m+1}}^{1})) \\
+                     &= f(P^x)\\
+                     &= 2
+                \end{align*}
+                Reference:<br>
+                [1] https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic
 
             </div>
-
             </div>
-            
         </div>
         
 
