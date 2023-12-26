@@ -15,34 +15,41 @@
     body {
         font-family: 'Tiro Bangla', sans-serif;
     }
+    .bg-cream {
+        background-color: rgb(255 255 235);
+    }
     
   </style>
 </head>
 <bod class="">
-    <div class="bg-emerald-50 text-2xl">
-        <div class="text-center py-2"> 
-            <div> জাতীয় গণিত উৎসব - ২০২৩</div>
-            <div>সমস্যা সমাধান</div>
-           
-            
+    <div class="bg-emerald-50 mx-4">
+        <div class="text-center py-2 text-2xl"> 
+            <div>Bangladesh Mathematical Olympiad</div>
+            <div>Solution (National Round)</div>
          </div>
-        
     </div>
     <div class="mx-4 mt-2">
-        <div class="text-sky-500 text-center">
-            ক্যাটাগরি: সেকেন্ডারি (৯ম-১০ম শ্রেণি)
-        </div>
-        <div class="my-2">
-            সমস্যা ০১:<br>
-            নিচের সমীকরণটি সকল সম্ভাব্য অঋণাত্মক পূর্ণসংখ্যিক সমাধান \((x,y)\)  নির্ণয় কর যেন:
-            $$ x! + 2^y = (x+1)! $$ 
+        
+        <div class="my-2 bg-cream px-4 py-2">
+            <div>Problem:</div>
+            Find all possible non-negative integer solution \((x,y)\) of the following equation:
+            $$ x! + 2^y = (x+1)! $$
+            <span class="text-blue-600">(Category: Secondary; 2023)</span>
         </div>
 
         <div class="bg-emerald-50 shadow rounded-lg">
-            <div class="px-4 py-2 my-1">
-                <div>সমাধান ০১:</div>
+            <div class="px-4 py-2 my-2">
+                <div>Solution:</div>
+                
             <div>
-                দেওয়া আছে,
+                We know,
+                \begin{align*}
+                n! &= n \times (n-1) \times \dots \times 3 \times 2 \times 1\\
+                   &= n \times (n-1)! 
+                \end{align*}
+               
+
+                Given that,
                 \begin{align*}
                     x! + 2^y &= (x+1)! \\
                     \implies 2^y &= (x+1)! - x! \\
@@ -50,27 +57,29 @@
                    \implies 2^y &= x! \times \{ (x+1) - 1 \} \\
                    \implies 2^y &= x! \times x \tag{1} \\
                 \end{align*}
-                আমরা জানি,
-                $$ n! = 1 \times 2 \times 3 \times \dots \times n$$
-                সমীকরণ \(1\) থেকে স্পষ্টত \(x\) এর মান \(2\) থেকে বেশী হতে পারবে না। কারণ \(1\) এর বামপক্ষে রয়েছে \(2\) এর ঘাত আর \(x\) এর মান \(3\) হয়ে গেলেই ডানপক্ষে একটি মোলিক সংখ্যা চলে আসবে যাকে আর \(2\) এর ঘাত আকারে বিশ্লেষণ করা যায় না।
-                তাই আমরা  \(x = 0, 1, 2\)  দিয়ে সমীকরণ \(1\) পরীক্ষা করলে দেখা যাবে শুধুমাত্র \(x = 1, 2\) এর জন্য ডানপক্ষকে \(2\)  এর ঘাত আকারে প্রকাশ করা যাচ্ছে।
-
-                <br>
-                সুতরাং, সমাধান সেট, \(S = \{(1, 0), (2, 2)\} \)
+                <div>
+                    From equation \(1\), it is clear that \(x \ngtr 2 \). When \(x\) is greater than \(2\), such as \(x = 5\), prime numbers \(3, 5\) emerge that cannot be represented as a power of \(2\).
+                </div>
+                <div>
+                   Therefore, \((x, y) = \{(1, 0), (2, 2)\} \)
+                </div>
             </div>
             </div>
         </div>
-        <div class="text-sky-500 text-center">
-            ক্যাটাগরি: হায়ার সেকেন্ডারি (১১শ - ১২শ শ্রেণি)
+        <div class="my-2 bg-cream px-4 py-2">
+            <div>Problem:</div>
+            For any positive integer \(n\), \(f(n)\) to be the smallest positive integer that does not divide \(n\). For example, \(f(1) = 2, f(6) = 4\).  Prove that for any positive integer \(n\), either \(f(f(n))\) or
+            \(f(f(f(n)))\) must be equal to \(2\).
+            <div>
+                <span class="text-blue-600">(Category: Higher Secondary; 2023)</span>
+            </div>
+            
         </div>
-        <div class="my-2">
-            সমস্যা ০৩:<br>
-            যেকোন ধনাত্মক পূর্ণসংখ্যা \(n\) এর জন্য \(f(n)\) হলো ক্ষুদ্রতম ধনাত্মক পূর্ণসংখ্যা, যেটি দ্বারা n বিভাজ্য নয়। যেমন: \(f(1) = 2, f(6) = 4\)। প্রমাণ করো যে, যেকোন ধনাত্মক পূর্ণসংখ্যা, \(n\) এর জন্য, হয় \(f(f(n))\) অথবা \(f(f(f(n)))\) অব্যশই \(2\) এর সমান হবে।
-        </div>
+        
 
         <div class="bg-emerald-50 shadow rounded-lg">
             <div class="px-4 py-2 my-1">
-                <div>সমাধান ০৩:</div>
+                <div>Solution:</div>
             <div>
                 $$
                 n = \begin{cases} 
@@ -79,17 +88,17 @@
                 \end{cases}
                 ; k \in \mathbb{N}
                 $$
-                যদি \(n = 2k - 1\) হয়,
+                If \(n = 2k - 1\),
                 \begin{align*}
                      f(f(f(2k - 1))) &= f(f(2)) \\
                      &= f(3) \\
                      &= 2
                 \end{align*}
-                যদি \(n = 2k \) হয় তাহলে Fundamental Theorem of Arithmetic [1] অনুযায়ী,
+                If \(n = 2k \), then according to Fundamental Theorem of Arithmetic [1]:
                 $$
                      2k = {P_1}^{n_1} \times {P_2}^{n_2} \times \dots \times {P_m}^{n_m}
                 $$
-                যেখানে  \(P_1, P_2, P_3, \dots \) ক্রমান্বয়ে মৌলিক সংখ্যা \(2, 3, 5, \dots\) কে নির্দেশ করে এবং \(n_i\) অঋণাত্মক পূর্ণসংখ্যা কিন্তু \(n_m\) ধনাত্মক পূর্ণসংখ্যা।
+                where  \(P_1, P_2, P_3, \dots \) denotes prime numbers \(2, 3, 5, \dots\) respectively and \(n_i\) denotes non-negative integer but  \(n_m\) positive integer
                 \begin{align*}
                      f(f(2k)) &= f(f({P_1}^{n_1} \times {P_2}^{n_2} \times \dots \times {P_m}^{n_m})) \\
                      &= f(min({P_1}^{n_1 + 1}, {P_2}^{n_2 + 1}, \dots, {P_m}^{n_m + 1}, {P_{m+1}}^{1})) \\
@@ -102,7 +111,8 @@
             </div>
             </div>
         </div>
-        
+
+       
 
     </div>
 
