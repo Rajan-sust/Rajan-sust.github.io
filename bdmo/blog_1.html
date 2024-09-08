@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
 
@@ -59,62 +61,45 @@
     </div>
   </nav>
 
+    <!-- <div class="container mx-auto px-4 py-8 max-w-3xl">
+        
+    </div> -->
 
-  <div class="container mx-auto px-4 py-8 max-w-3xl">
-    <div class="text-2xl py-2"> Journal Publications</div>
-    <!-- <div class="text-lg">Journal Publications</div> -->
-    <div class="space-y-4">
-        <div class="px-4">
-            <div>[1] <a href="https://doi.org/10.1016/j.ygeno.2022.110414" class="highlight underline" target="_blank">VirusTaxo: Taxonomic classification of viruses from the genome sequence using k-mer enrichment  </a> </div>
-            <div class="text-sm">Rajan Saha Raju, Abdullah Al Nahid, Preonath Chondrow Dev, Rashedul Islam</div>
-        </div>
-        <hr>
-       <div class="px-4">
-        <div>[2] <a href="https://doi.org/10.1093/bib/bbab102" class="highlight underline" target="_blank">Choice of assemblers has a critical impact on de novo assembly of SARS-CoV-2 genome and characterizing variants</a></div>
-        <div class="text-sm">Rashedul Islam, Rajan Saha Raju, Nazia Tasnim, Istiak Hossain Shihab, Maruf Ahmed Bhuiyan, Yusha Araf, Tofazzal Islam </div>
-       </div>
-       <hr>
-       <div class="px-4">
-        <div>[3] <a href="https://doi.org/10.3390/pr10112390" class="highlight underline" target="_blank">A Reinforcement-Learning-Based Model for Resilient Load Balancing in Hyperledger Fabric</a></div>
-        <div class="text-sm">Reem Alotaibi, Madini Alassafi, Md. Saiful Islam Bhuiyan, Rajan Saha Raju, Md Sadek Ferdous</div>
-       </div>
-       <hr>
-       <div class="px-4">
-        <div>[4] <a href="https://doi.org/10.1371/journal.pntd.0011822" class="highlight underline" target="_blank">Old tools, new applications: Use of environmental bacteriophages for typhoid surveillance and evaluating vaccine impact</a></div>
-        <div class="text-sm">Yogesh Hooda, Shuborno Islam, Rathin Kabiraj, Hafizur Rahman, Himadree Sarkar, Kesia E. da Silva, Rajan Saha Raju, Stephen P. Luby, Jason R. Andrews, Samir K. Saha, Senjuti Saha</div>
-       </div>
-    </div>
-</div>
-
-<div class="container mx-auto px-4 max-w-3xl">
-    <div class="text-2xl py-2"> Conference Publications</div>
-    
-    <div class="space-y-4">
-        <div class="px-4">
-            <div>[1] <a href="https://doi.org/10.1109/ICBSLP47725.2019.202055" class="highlight underline" target="_blank">A Bangla Text-to-Speech System using Deep Neural Networks</a> </div>
-            <div class="text-sm">Rajan Saha Raju, Prithwiraj Bhattacharjee, Arif Ahmad, Mohammad Shahidur Rahman</div>
-        </div>
-        <hr>
-       <div class="px-4">
-        <div>[2] <a href="https://doi.org/10.1109/ICSCT53883.2021.9642672" class="highlight underline" target="_blank">End-to-End Bangla Speech Synthesis</a></div>
-        <div class="text-sm">Prithwiraj Bhattacharjee, Rajan Saha Raju, Arif Ahmad, M. Shahidur Rahman</div>
-       </div>
+    <div class="text-center text-2xl py-4">
+         <div>Bangladesh Mathematical Olympiad National Round Solution</div>
+        <div>Blog 01</div>
     </div>
 
-</div>
 
+    <div class="container mx-auto px-4 py-8 max-w-3xl">
+        <div class="space-y-4 text-wrap">
+            <!-- # Problem -->
+            <div class="bg-white border rounded shadow px-2 py-2">
+                <div class="font-bold">[Problem 01, Secondary 2023]:</div> 
+                <div>Find all possible non-negative integer solution \((x,y)\) of the following equation: $$ x! + 2^y = (x+1)! $$</div>
+            </div>
+            <!-- # Solution -->
+            <div class="bg-white border rounded shadow px-2 py-2">
+                <div class="font-bold">Solution:</div>
+                <div> 
+                  We know, \begin{align*} 
+                  n! &= n \times (n-1) \times \dots \times 3 \times 2 \times 1\\ &= n \times (n-1)! \end{align*} Given that, 
+                  \begin{align*} x! + 2^y &= (x+1)! \\ 
+                  ⇒ 2^y &= (x+1)! - x! \\ 
+                  ⇒ 2^y &= (x+1) \times x! - x! \\ 
+                  ⇒ 2^y &= x! \times \{ (x+1) - 1 \} \\ 
+                  ⇒ 2^y &= x! \times x \tag{1} \\ 
+                  \end{align*} 
+              </div>
+              <div>
+                  From equation \(1\), it is clear that \(x \ngtr 2 \). When \(x\) is greater than \(2\), the prime factorization of \(x\) includes at least one prime number that cannot be expressed as a power of \(2\).
+              </div>
+              <div>Therefore, \((x, y) = \{(1, 0), (2, 2)\} \)</div>
+                
+            </div>
 
+           
+        </div>
+    </div>
 
-
-
-
-  
-
-  
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
-
-
-  
-  
-  </body>
-</html>
+</body>
