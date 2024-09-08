@@ -54,7 +54,7 @@
             <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">CV</a>
           </li>
           <li>
-            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blog</a>
+            <a href="/math-blog.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blog</a>
           </li>
         </ul>
       </div>
@@ -72,13 +72,20 @@
         <div class="space-y-4 text-wrap">
             <!-- # Problem -->
             <div class="bg-white border rounded shadow px-2 py-2">
-                <div>Problem 01  <span class="highlight">[Secondary, 2023]</span>: </div> Find all possible non-negative integer solution \((x,y)\) of the following equation: $$ x! + 2^y = (x+1)! $$
+                <div class="font-bold highlight">Problem 01[Secondary, 2023]:</div> Find all possible non-negative integer solution \((x,y)\) of the following equation: $$ x! + 2^y = (x+1)! $$
             </div>
             <!-- # Solution -->
             <div class="bg-white border rounded shadow px-2 py-2">
-                <div>Solution 01:</div>
+                <div class="font-bold highlight">Solution 01:</div>
                 <div> 
-                    We know, \begin{align*} n! &= n \times (n-1) \times \dots \times 3 \times 2 \times 1\\ &= n \times (n-1)! \end{align*} Given that, \begin{align*} x! + 2^y &= (x+1)! \\ \implies 2^y &= (x+1)! - x! \\ \implies 2^y &= (x+1) \times x! - x! \\ \implies 2^y &= x! \times \{ (x+1) - 1 \} \\ \implies 2^y &= x! \times x \tag{1} \\ \end{align*} 
+                    We know, \begin{align*} 
+                    n! &= n \times (n-1) \times \dots \times 3 \times 2 \times 1\\ &= n \times (n-1)! \end{align*} Given that, 
+                    \begin{align*} x! + 2^y &= (x+1)! \\ 
+                    ⇒ 2^y &= (x+1)! - x! \\ 
+                    ⇒ 2^y &= (x+1) \times x! - x! \\ 
+                    ⇒ 2^y &= x! \times \{ (x+1) - 1 \} \\ 
+                    ⇒ 2^y &= x! \times x \tag{1} \\ 
+                    \end{align*} 
                 </div>
                 <div>
                     From equation \(1\), it is clear that \(x \ngtr 2 \). When \(x\) is greater than \(2\), the prime factorization of \(x\) includes at least one prime number that cannot be expressed as a power of \(2\).
@@ -87,14 +94,14 @@
             </div>
 
             <!-- # Problem -->
-             <div>
-                <div>Problem 02 [Higher Secondary, 2023]:</div>
+             <div class="bg-white border rounded shadow px-2 py-2">
+                <div class="font-bold highlight">Problem 02 [Higher Secondary, 2023]:</div>
                 <div>For any positive integer \(n\), \(f(n)\) to be the smallest positive integer that does not divide \(n\). For example, \(f(1) = 2, f(6) = 4\). Prove that for any positive integer \(n\), either \(f(f(n))\) or \(f(f(f(n)))\) must be equal to \(2\).</div>
              </div>
 
              <!-- # Solution -->
-             <div>
-                <div>Solution 02:</div>
+             <div class="bg-white border rounded shadow px-2 py-2">
+                <div class="font-bold highlight">Solution 02:</div>
                     <div>$$ n = \begin{cases} 2k - 1 & \\ 2k & \end{cases} ; k \in \mathbb{N} $$ If \(n = 2k - 1\),</div>
                     <div>
                         \begin{align*} f(f(f(2k - 1))) &= f(f(2)) \\ &= f(3) \\ &= 2 \end{align*}
@@ -112,7 +119,7 @@
                         f(f(2k)) &= f(f(\prod_{i=1}^{m} {P_i}^{a_i})); \hspace{1cm} {a_i} \in z^+ \\ 
                         &=  f(min(\min_{i = 1}^{m} {P_i}^{a_i + 1}, {P_{m+1}}^1)) \\
                         <!-- &= f(min({P_1}^{n_1 + 1}, {P_2}^{n_2 + 1}, \dots, {P_m}^{n_m + 1}, {P_{m+1}}^{1})) \\ -->
-                         &= f(P^{a_k})\\ 
+                         &= f(P^{a})\\ 
                          &= 2 
                         \end{align*}
                     </div>
@@ -120,70 +127,70 @@
              </div>
 
              <!-- # Problem -->
-             <div>
-                <div>Problem 03 [Secondary, 2022]:</div> Find all solutions for real \(x\): $$ {\left\lfloor x \right\rfloor}^{3} - 7 {\left\lfloor x + \frac{1}{3} \right\rfloor} = -13 $$
+             <div class="bg-white border rounded shadow px-2 py-2 mt-4">
+                <div class="font-bold highlight">Problem 03 [Secondary, 2022]:</div> Find all solutions for real \(x\): $$ {\left\lfloor x \right\rfloor}^{3} - 7 {\left\lfloor x + \frac{1}{3} \right\rfloor} = -13 $$
              </div>
 
              <!-- # Solution -->
 
-             <div>
-                <div>
-                    <a href="#Solution03"> Solution 03:</a>
-                    
-                </div>
+             <div class="bg-white border rounded shadow px-2 py-2 mt-4">
+                <div class="font-bold highlight">Solution 03:</div>
                 <div>Let,</div>
                 <div>\(\left\lfloor x \right\rfloor = a, \left\lfloor x + \frac{1}{3} \right\rfloor = b; \hspace{1cm} a, b \in \mathbb{Z} \)</div>
-                <div>Then, \(a = b\) or \(b = a + 1\)</div>
+                <div>Then, \(a \neq b\) or \(b = a + 1\)</div>
                 <div>
-                    If \(a = b\), then
+                    Case 1: If \(a = b\),
                     \begin{align*} 
                     {\left\lfloor x \right\rfloor}^{3} - 7 {\left\lfloor x + \frac{1}{3} \right\rfloor} &= -13 
-                    \\ \implies a^3 - 7a &= -13 \\ 
-                    \implies a^3 + 13 &= 7a \end{align*}
+                    \\ ⇒ a^3 - 7a &= -13 \\ 
+                    ⇒ a^3 + 13 &= 7a \end{align*}
                 </div>
                 <div>
-                    As \(a^3 + 13 \not\equiv 7a\) (mod 2), it is not possible \(a = b\)
+                    We can prove  \(a ≠ b\) by showing \(a^3 + 13 \not\equiv 7a\) (mod 2)
                 </div>
                 <div>
-                    For \(b = a + 1\),
+                    Case 2: If \(b = a + 1\),
                     \begin{align*} 
                         {\left\lfloor x \right\rfloor}^{3} - 7 {\left\lfloor x + \frac{1}{3} \right\rfloor} &= -13 \\ 
-                        \implies a^3 - 7 (a + 1) &= -13 \\ 
-                        \implies a^3  - 7a + 6 &= 0 \\
-                        \implies (a-1)(a-2)(a+3) &= 0 \\
+                        ⇒ a^3 - 7 (a + 1) &= -13 \\ 
+                        ⇒ a^3  - 7a + 6 &= 0 \\
+                        ⇒ (a-1)(a-2)(a+3) &= 0 \\
                         \therefore a = 1, 2, -3
                     \end{align*}
 
                 </div>
+                <div>
+                    Properties of floor function: If \( \left\lfloor x  \right\rfloor = n\); where \(n \in \mathbb{Z}\) then, \(n \le x < n + 1\)
+                </div>
+                <div>Solving for \((a, b) = (1, 2)\),</div>
+                <div>For \(a = 1\):</div>
+                <div>
+                    \begin{align*}
+                                \left\lfloor x  \right\rfloor &= 1 \\
+                                ⇒ 1 \le x < 2 \\
+                                \therefore x = [1, 2)
+                        \end{align*}
+                </div>
 
-                <div> If \( \left\lfloor x  \right\rfloor = n; \hspace{1cm} n \in \mathbb{Z}  \)  </div>
-                <div>then, \(n \le x < n + 1\)</div>
-                <div>If \((a, b) = (1, 2)\),</div>
+                <div>For \(b = 2\):</div>
 
                 <div>
                     \begin{align*}
-                                a &= 1 \\
-                                \implies \left\lfloor x  \right\rfloor &= 1 \\
-                                \implies 1 \le x < 2 \\
-                                \therefore x = [1, 2)
-                        \end{align*}
-
-                        \begin{align*}
-                                b &= 2 \\
-                                \implies \left\lfloor x + \frac{1}{3} \right\rfloor &= 2 \\
-                                \implies 2 \le (x + \frac{1}{3}) < 3 \\
-                                \implies 2 - \frac{1}{3} \le x < 3 - \frac{1}{3} \\
-                                \implies \frac{5}{3} \le x < \frac{8}{3} \\
+                                \left\lfloor x + \frac{1}{3} \right\rfloor &= 2 \\
+                                ⇒ 2 \le (x + \frac{1}{3}) < 3 \\
+                                ⇒ 2 - \frac{1}{3} \le x < 3 - \frac{1}{3} \\
+                                ⇒ \frac{5}{3} \le x < \frac{8}{3} \\
                                 \therefore x = [\frac{5}{3}, \frac{8}{3})
                         \end{align*}
                 </div>
 
                 
                 <div>
-                    The common region is = \( [1, 2)  \cap [\frac{5}{3}, \frac{8}{3}) =  [\frac{5}{3}, 2) \)
+                    Combining the conditions:  \( x \in [1, 2)  \cap [\frac{5}{3}, \frac{8}{3})\)
                 </div>
+                <div>\( \therefore x \in [\frac{5}{3}, 2)\)</div>
                 <div>
-                    Similarly, the common region for \( (2, 3), (-3, -2)\) is \([\frac{8}{3}, 3), [\frac{-7}{3}, -2) \) respectively
+                    Similarly, for \( (2, 3), (-3, -2)\) region is \([\frac{8}{3}, 3), [\frac{-7}{3}, -2) \) respectively
                 </div>
                 <div>
                     The final answer is:
