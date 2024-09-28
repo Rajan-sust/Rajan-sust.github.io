@@ -65,47 +65,60 @@
         
     </div> -->
 
-    <div class="text-center text-2xl py-4">Bangladesh Mathematical Olympiad National Round Solution</div>
+    <div class="text-center text-2xl py-4">
+         <div>Bangladesh Mathematical Olympiad National Round Solution</div>
+        <div>Blog 05</div>
+    </div>
 
 
     <div class="container mx-auto px-4 py-8 max-w-3xl">
         <div class="space-y-4 text-wrap">
-            <!-- # Blog 1 -->
+            <!-- # Problem -->
             <div class="bg-white border rounded shadow px-2 py-2">
-                <div class="font-bold">Blog 01 [Problem 01, Secondary 2023]:</div> Find all possible non-negative integer solution \((x,y)\) of the following equation: $$ x! + 2^y = (x+1)! $$
-                <div><a href="/bdmo/blog_1.html" class="highlight underline" target="_blank">[Solution]</a></div>
+              <div class="font-bold">[Problem 6, Higher Secondary 2010]:</div>
+              <div>\(a\) and \(b\) are two positive integers both less than \(2010\); \(a \neq b\). Find the number of ordered
+                pairs \((a, b)\) such that \(a^2 + b^2\) is divisible by \(5\).</div>
+            </div>
+            <!-- # Solution -->
+            <div class="bg-white border rounded shadow px-2 py-2">
+                <div class="font-bold">Solution:</div>
+                <div>
+                  Let's examine the squares of integers modulo 5:
+                  \begin{align}
+                    1^2 &\equiv 1 \pmod{5} \\
+                    2^2 &\equiv 4 \pmod{5} \\
+                    3^2 &\equiv 4 \pmod{5} \\
+                    4^2 &\equiv 1 \pmod{5} \\
+                    5^2 &\equiv 0 \pmod{5}
+                  \end{align}
+                  The pattern \((1, 4, 4, 1, 0)\) repeats for all integers.
+                </div>
+                <br>
+
+                <div>Identify conditions for \(a^2 + b^2\) to be divisible by 5:</div>
+                <div>Case 1: Both numbers square to 0 (mod 5)</div>
+                <div>Case 2: One number squares to 1 and the other to 4 (mod 5)</div>
+                <br>
+                <div>Since the question asks for ordered pairs, we need to double our count for both cases.</div>
+
+                <br>
+
+                <div>
+                  There are 402 numbers that square to 0 (mod 5) within the range 1 to 2010 because there are 402 complete blocks of 5 numbers, and in each block, the last number squares to 0 (mod 5).
+                </div>
+                <br>
+                <div>
+                  For each of 1 and 4 (mod 5), there are 804 numbers within the range 1 to 2010 that square to these values. This is because there are 402 complete blocks of 5 numbers, and in each block, there are 2 numbers that square to 1 (mod 5) and 2 numbers that square to 4 (mod 5).
+                </div>
+                <br>
+                <div>Answer:</div>
+                <div class="text-center"> \( \dbinom{402}{2} \times 2 + \dbinom{804}{1} \times \dbinom{804}{1} \times 2\)</div>
+                
             </div>
 
-            <!-- # Blog 2 -->
-             <div class="bg-white border rounded shadow px-2 py-2">
-                <div class="font-bold">Blog 02 [Problem 03, Higher Secondary 2023]:</div>
-                <div>For any positive integer \(n\), \(f(n)\) to be the smallest positive integer that does not divide \(n\). For example, \(f(1) = 2, f(6) = 4\). Prove that for any positive integer \(n\), either \(f(f(n))\) or \(f(f(f(n)))\) must be equal to \(2\).</div>
-                <div><a href="/bdmo/blog_2.html" class="highlight underline" target="_blank">[Solution]</a></div>
-            </div>
-
-             <!-- # Blog 3 -->
-             <div class="bg-white border rounded shadow px-2 py-2">
-                <div class="font-bold">Blog 03 [Problem 01, Secondary 2022]:</div> Find all solutions for real \(x\): $$ {\left\lfloor x \right\rfloor}^{3} - 7 {\left\lfloor x + \frac{1}{3} \right\rfloor} = -13 $$
-                <div><a href="/bdmo/blog_3.html" class="highlight underline" target="_blank">[Solution]</a></div>
-            </div>
-
-             <!-- # Blog 4 -->
-              <div class="bg-white border rounded shadow px-2 py-2">
-                <div class="font-bold">Blog 04 [Problem 5, Higher Secondary 2021]:</div>
-                <div>How many ways can you roll three 20-sided dice such that the sum of the three rolls is exactly 42? Here the order of the rolls matters.
-                    (Note that a 20-sided die is very much like a regular six-sided die other than the fact that it has 20 faces instead of the regular six.)</div>
-                <div><a href="/bdmo/blog_4.html" class="highlight underline" target="_blank">[Solution]</a></div>
-              </div>
-              <!-- # Blog 5 -->
-              <div class="bg-white border rounded shadow px-2 py-2">
-                <div class="font-bold">Blog 05 [Problem 6, Higher Secondary 2010]:</div>
-                <div>\(a\) and \(b\) are two positive integers both less than \(2010\); \(a \neq b\). Find the number of ordered
-                  pairs \((a, b)\) such that \(a^2 + b^2\) is divisible by \(5\).</div>
-                <div><a href="/bdmo/blog_5.html" class="highlight underline" target="_blank">[Solution]</a></div>
-              </div>
+           
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 
 </body>
-
