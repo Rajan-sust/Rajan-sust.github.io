@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper, [Kingfisher: A hybrid LLM-augmented Bangla text normalization for enhanced text-to-speech](/publications/), has been published in the *Natural Language Processing Journal*.
+Our paper, [Kingfisher: A hybrid LLM-augmented Bangla text normalization for enhanced text-to-speech](/publications/), has been published in the _Natural Language Processing Journal_.

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper, [VirusTaxo: Taxonomic classification of viruses from the genome sequence using k-mer enrichment](/publications/), has been published in *Genomics*.
+Our paper, [VirusTaxo: Taxonomic classification of viruses from the genome sequence using k-mer enrichment](/publications/), has been published in _Genomics_.
