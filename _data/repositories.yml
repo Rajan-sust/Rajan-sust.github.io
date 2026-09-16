@@ -4,5 +4,6 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - Rajan-sust/BanglaTextNorm
   - omics-lab/VirusTaxo
+  - omics-lab/ProtSEC
+  - Rajan-sust/BanglaTextNorm

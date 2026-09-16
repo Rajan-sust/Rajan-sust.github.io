@@ -5,6 +5,10 @@ title: repositories
 description: Open-source projects and GitHub activity.
 nav: true
 nav_order: 4
+_styles: |
+  .post-header {
+    display: none;
+  }
 ---
 
 {% if site.data.repositories.github_users %}

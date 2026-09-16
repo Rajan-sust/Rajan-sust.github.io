@@ -1,0 +1,73 @@
+{% comment %}
+  Local override of al_folio_core's repository/repo_user.liquid.
+  Renders live, tokenless stats straight from the real GitHub REST API
+  (api.github.com) instead of the third-party github-stats-extended image.
+  Only metrics obtainable WITHOUT an auth token are shown: total stars
+  earned (summed across public repos), public repo count, followers, and
+  following. Commits/PRs/issues/contributed-to/grade require GitHub's
+  GraphQL API with a token, which can't be safely embedded in a static
+  site's client-side JS (it would be exposed to every visitor).
+{% endcomment %}
+{% assign user_id = include.username | slugify %}
+
+<div class="repo p-2 text-left">
+  <div
+    id="repo-user-{{ user_id }}"
+    style="border: 1px solid var(--global-divider-color); border-radius: 6px; padding: 0.75rem 1rem; text-align: left;"
+  >
+    <a href="https://github.com/{{ include.username }}" style="text-decoration: none; color: var(--global-text-color); font-weight: 600;">
+      {{ include.username }}'s GitHub stats
+    </a>
+    <ul class="repo-user-stats" style="font-size: 0.85rem; margin: 0.5rem 0 0; padding: 0; list-style: none;">
+      <li>★ Total stars earned: <span class="stat-stars">–</span></li>
+      <li>Public repos: <span class="stat-repos">–</span></li>
+      <li>Followers: <span class="stat-followers">–</span></li>
+      <li>Following: <span class="stat-following">–</span></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var root = document.getElementById('repo-user-{{ user_id }}');
+    if (!root) return;
+    var username = {{ include.username | jsonify }};
+
+    fetch('https://api.github.com/users/' + username)
+      .then(function (res) {
+        return res.ok ? res.json() : Promise.reject(res.status);
+      })
+      .then(function (user) {
+        root.querySelector('.stat-repos').textContent = user.public_repos;
+        root.querySelector('.stat-followers').textContent = user.followers;
+        root.querySelector('.stat-following').textContent = user.following;
+      })
+      .catch(function () {
+        root.querySelector('.stat-repos').textContent = 'n/a';
+      });
+
+    function sumStars(page, total) {
+      return fetch('https://api.github.com/users/' + username + '/repos?per_page=100&page=' + page)
+        .then(function (res) {
+          return res.ok ? res.json() : Promise.reject(res.status);
+        })
+        .then(function (repos) {
+          var pageTotal = repos.reduce(function (sum, r) {
+            return sum + (r.stargazers_count || 0);
+          }, total);
+          if (repos.length === 100 && page < 5) {
+            return sumStars(page + 1, pageTotal);
+          }
+          return pageTotal;
+        });
+    }
+
+    sumStars(1, 0)
+      .then(function (total) {
+        root.querySelector('.stat-stars').textContent = total;
+      })
+      .catch(function () {
+        root.querySelector('.stat-stars').textContent = 'n/a';
+      });
+  })();
+</script>

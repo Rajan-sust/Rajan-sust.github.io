@@ -1,0 +1,44 @@
+{% comment %}
+  Local override of al_folio_core's repository/repo.liquid.
+  Renders live stats straight from the real GitHub REST API (api.github.com)
+  instead of the third-party github-stats-extended pin-card image, since that
+  service's cache was showing stale numbers.
+{% endcomment %}
+{% assign repo_id = include.repository | slugify %}
+
+<div class="repo p-2 text-left">
+  <div
+    id="repo-{{ repo_id }}"
+    style="border: 1px solid var(--global-divider-color); border-radius: 6px; padding: 0.75rem 1rem; height: 100%; text-align: left;"
+  >
+    <a href="https://github.com/{{ include.repository }}" style="text-decoration: none; color: var(--global-text-color); font-weight: 600;">
+      {{ include.repository }}
+    </a>
+    <p class="repo-description" style="font-size: 0.85rem; margin: 0.5rem 0; min-height: 2.4em;">Loading…</p>
+    <div class="repo-meta" style="font-size: 0.85rem; color: var(--global-text-color);">
+      <span class="repo-language"></span>
+      <span class="repo-stars">★ –</span>
+      <span class="repo-forks">⑂ –</span>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var root = document.getElementById('repo-{{ repo_id }}');
+    if (!root) return;
+    fetch('https://api.github.com/repos/{{ include.repository }}')
+      .then(function (res) {
+        return res.ok ? res.json() : Promise.reject(res.status);
+      })
+      .then(function (data) {
+        root.querySelector('.repo-description').textContent = data.description || '';
+        root.querySelector('.repo-language').textContent = data.language ? data.language + ' ·' : '';
+        root.querySelector('.repo-stars').textContent = '★ ' + data.stargazers_count;
+        root.querySelector('.repo-forks').textContent = '⑂ ' + data.forks_count;
+      })
+      .catch(function () {
+        root.querySelector('.repo-description').textContent = 'Live stats unavailable right now.';
+      });
+  })();
+</script>
