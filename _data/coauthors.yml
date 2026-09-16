@@ -1,0 +1,8 @@
+# this file links co-author names in the bibliography to their personal/profile pages
+# key: lowercase surname as it appears in _bibliography/papers.bib
+# value: list of firstname variants and an optional profile url
+#
+# example:
+# "islam":
+#   - firstname: ["Rashedul", "R."]
+#     url: https://example.com

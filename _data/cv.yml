@@ -1,0 +1,247 @@
+cv:
+  name: Rajan Saha Raju
+  label: Researcher — Artificial Intelligence, Computational Biology, Spoken Language Processing
+  email: rajanrajusust@gmail.com
+  location: Sylhet, Bangladesh
+  image: ""
+  summary: PhD applicant with research and industry experience spanning speech technology, computational biology, and software engineering. Author of Kingfisher (Bangla text normalization), VirusTaxo (viral taxonomic classification), and ProtSEC (protein sequence embedding).
+
+  social_networks:
+    - network: GitHub
+      username: Rajan-sust
+
+  address:
+    street: ICT Cell, Shahjalal University of Science and Technology
+    city: Sylhet
+    region: Sylhet
+    postalCode: "3114"
+    countryCode: BD
+
+  sections:
+    Education:
+      - institution: Shahjalal University of Science and Technology
+        location: Sylhet, Bangladesh
+        area: Computer Science & Engineering
+        studyType: B.Sc.
+        start_date: 2015
+        end_date: 2019
+        score: "CGPA 3.81/4.00 (With Distinction)"
+        courses: "Thesis: Bangla Text-to-Speech (TTS); Advisor: Prof. Mohammad Shahidur Rahman"
+        highlights:
+          - Ranked 4th out of 65 students
+
+    Experience:
+      - company: ICT Cell, Shahjalal University of Science and Technology
+        position: Assistant Computer Programmer
+        location: Sylhet, Bangladesh
+        start_date: 2024-01-01
+        end_date: present
+        highlights:
+          - Core technical contributor of the online undergraduate admission portal
+          - Responsible for the development and maintenance of all major software systems, including the official website, student portal, and result processing system
+
+      - company: ICT Cell, Shahjalal University of Science and Technology
+        position: Assistant Network Engineer
+        location: Sylhet, Bangladesh
+        start_date: 2022-10-01
+        end_date: 2024-01-01
+        highlights:
+          - Administered authoritative DNS and maintained security of public-facing web servers
+          - Evaluated and deployed fiber-to-the-home (FTTH) connectivity for campus residential buildings, supervising installation to extend wireless network coverage
+
+      - company: Child Health Research Foundation (CHRF)
+        position: Bioinformatician
+        location: Dhaka, Bangladesh
+        start_date: 2021-07-01
+        end_date: 2022-04-01
+        highlights:
+          - Maintained the Nextstrain Bangladesh build for real-time tracking of SARS-CoV-2 evolution
+          - Performed metagenomic data analysis, including quality control, read trimming, host DNA removal, assembly, gene prediction, taxonomic profiling, and functional annotation
+
+      - company: "REVE Chat (Team: Machine Learning)"
+        position: Junior Software Engineer
+        location: Dhaka, Bangladesh
+        start_date: 2020-06-01
+        end_date: 2020-12-01
+        highlights:
+          - Designed and implemented a web crawler to collect data from diverse sources
+          - Improved the accuracy of a chatbot by ~5% by implementing entity extraction, intent matching, and contextual analysis
+
+    Teaching:
+      - company: Institute of Education and Research (IER), SUST
+        position: "Instructor, Teaching Advanced ICT, B.Ed Program"
+        location: Sylhet, Bangladesh
+        start_date: 2026-01-01
+        end_date: 2026-06-01
+        highlights:
+          - "Teaching evaluation (out of 10): mean 9.7 (σ=0.4)"
+
+      - company: Border Guard Public School & College
+        position: Programming Mentor
+        location: Sylhet, Bangladesh
+        start_date: 2018-01-01
+        end_date: 2018-12-01
+        highlights:
+          - Mentored and trained high school students for the National High School Programming Contest
+
+    Awards:
+      - title: Champion (National Level)
+        awarder: AI For Bangla 2.0
+        date: 2023
+
+      - title: 1st Runner-up
+        awarder: 10th National Undergraduate Mathematics Olympiad, Sylhet Region
+        date: 2018
+
+      - title: 62nd place out of 296 teams (first quartile)
+        awarder: ICPC Asia Dhaka Regional Contest
+        date: 2018
+
+      - title: Champion (Dhaka Division)
+        awarder: National Creative Talent Hunt in Math and Computer
+        date: 2014
+
+      - title: Government Scholarship (General)
+        awarder: Secondary School Certificate (SSC) Examination
+        date: 2013
+
+      - title: Government Scholarship (Talent Pool)
+        awarder: Junior School Certificate (JSC) Examination
+        date: 2010
+
+    Publications:
+      - title: "Kingfisher: A hybrid LLM-augmented Bangla text normalization for enhanced text-to-speech"
+        authors:
+          - Rajan Saha Raju
+          - Arif Ahmad
+          - Mohammad Shahidur Rahman
+        publisher: Natural Language Processing Journal
+        releaseDate: 2026-02-01
+
+      - title: "A Reinforcement-Learning-Based Model for Resilient Load Balancing in Hyperledger Fabric"
+        authors:
+          - Reem Alotaibi
+          - Madini Alassafi
+          - Md. Saiful Islam Bhuiyan
+          - Rajan Saha Raju
+          - Md Sadek Ferdous
+        publisher: Processes
+        releaseDate: 2022-11-01
+
+      - title: "VirusTaxo: Taxonomic classification of viruses from the genome sequence using k-mer enrichment"
+        authors:
+          - Rajan Saha Raju
+          - Abdullah Al Nahid
+          - Preonath Chondrow Dev
+          - Rashedul Islam
+        publisher: Genomics
+        releaseDate: 2022-06-01
+        url: https://github.com/omics-lab/VirusTaxo
+
+      - title: "Choice of assemblers has a critical impact on de novo assembly of SARS-CoV-2 genome and characterizing variants"
+        authors:
+          - Rashedul Islam
+          - Rajan Saha Raju
+          - Nazia Tasnim
+          - Istiak Hossain Shihab
+          - Maruf Ahmed Bhuiyan
+          - Yusha Araf
+          - Tofazzal Islam
+        publisher: Briefings in Bioinformatics
+        releaseDate: 2021-09-01
+
+      - title: "End-to-End Bangla Speech Synthesis"
+        authors:
+          - Prithwiraj Bhattacharjee
+          - Rajan Saha Raju
+          - Arif Ahmad
+          - M. Shahidur Rahman
+        publisher: International Conference on Science & Contemporary Technologies
+        releaseDate: 2021-08-01
+
+      - title: "A Bangla Text-to-Speech System using Deep Neural Networks"
+        authors:
+          - Rajan Saha Raju
+          - Prithwiraj Bhattacharjee
+          - Arif Ahmad
+          - Mohammad Shahidur Rahman
+        publisher: International Conference on Bangla Speech and Language Processing
+        releaseDate: 2020-09-01
+
+      - title: "ProtSEC: Ultrafast Protein Sequence Embedding in Complex Space Using Fast Fourier Transform"
+        authors:
+          - Rajan Saha Raju
+          - Rashedul Islam
+        publisher: bioRxiv (preprint)
+        releaseDate: 2025-10-01
+
+    Professional Service:
+      - name: "Journal Reviewer — International Journal of Wavelets, Multiresolution and Information Processing"
+        date: 2026
+        issuer: World Scientific
+        icon: fa-solid fa-file-lines
+
+      - name: "Journal Reviewer — Journal of Engineering"
+        date: 2026
+        issuer: Wiley
+        icon: fa-solid fa-file-lines
+
+    Open Source Software:
+      - name: Kingfisher / BanglaTextNorm
+        summary: A hybrid LLM-augmented text normalizer for Bangla text-to-speech, released with the first public Bangla text normalization dataset.
+        highlights:
+          - https://github.com/Rajan-sust/BanglaTextNorm
+
+      - name: VirusTaxo
+        summary: A tool for taxonomic classification of viruses from metagenomic sequences.
+        highlights:
+          - https://github.com/omics-lab/VirusTaxo
+
+    Skills:
+      - name: Programming Languages
+        level: ""
+        icon: fa-solid fa-code
+        keywords: "Python3, R, C++, Java, Go, Bash, PHP"
+
+      - name: Bioinformatics
+        level: ""
+        icon: fa-solid fa-dna
+        keywords: "BLAST, HMMER, MMseqs2, fastp, Megahit, SPAdes, samtools, Nextstrain"
+
+      - name: Libraries
+        level: ""
+        icon: fa-solid fa-cubes
+        keywords: "PyTorch, scikit-learn, pandas, Matplotlib, Tidyverse, SciPy, XGBoost"
+
+      - name: Databases
+        level: ""
+        icon: fa-solid fa-database
+        keywords: "MySQL, MongoDB, Vector DB (Milvus, Qdrant)"
+
+      - name: Web
+        level: ""
+        icon: fa-solid fa-globe
+        keywords: "HTML, CSS, JavaScript, FastAPI, Laravel, Apache, Nginx"
+
+      - name: Networking Tools
+        level: ""
+        icon: fa-solid fa-network-wired
+        keywords: "phpIPAM, Oxidized, LibreNMS, Cloudflare"
+
+      - name: Misc
+        level: ""
+        icon: fa-solid fa-toolbox
+        keywords: "Git, Linux (Ubuntu, CentOS), Docker, LaTeX, Cloud (DigitalOcean, AWS)"
+
+    Interests:
+      - name: Artificial Intelligence
+        icon: fa-solid fa-brain
+        keywords: ""
+
+      - name: Computational Biology
+        icon: fa-solid fa-dna
+        keywords: ""
+
+      - name: Spoken Language Processing
+        icon: fa-solid fa-waveform-lines
+        keywords: ""
