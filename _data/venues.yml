@@ -1,14 +1,20 @@
 "NLPJ":
-  color: "#00369f"
+  color: "#009f36"
 
 "Genomics":
   color: "#009f36"
 
 "BiB":
-  color: "#9f3600"
+  color: "#009f36"
 
 "Processes":
-  color: "#6a00b8"
+  color: "#009f36"
 
 "bioRxiv":
-  color: "#b81400"
+  color: "#009f36"
+
+"ICSCT":
+  color: "#009f36"
+
+"ICBSLP":
+  color: "#009f36"
